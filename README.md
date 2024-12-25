@@ -1,6 +1,6 @@
 # Task Management System
 
-A robust task management system built with FastAPI, SQLAlchemy, and SQLite. The system provides a secure REST API for managing personal tasks with user authentication.
+A task management system built with FastAPI, SQLAlchemy, and SQLite. The system provides a secure REST API for managing personal tasks with user authentication.
 
 ## Table of Contents
 1. [Features](#features)
