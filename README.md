@@ -272,9 +272,12 @@ The API includes error handling for:
 ## Future Enhancements and Roadmap
 
 ### Immediate Priorities
-- Complete centralized error handling implementation        (status: implemented, need to refactor most files for it to work. miscalculated the time and tried working on it and start the front simultaneously)
-- Adjust and extend the tests and make some stress tests    (status: Following error handling changes, some tests cause problems and need further work for them to work(the tests, not the app )
-- Finish the basic frontend UX/UI                              (status: missing some UI componenets and the connectivity between the FE to the BE endpoint still does not work) 
+- Complete centralized error handling implementation
+  (status: implemented, need to refactor most files for it to work. miscalculated the time and tried working on it and start the front simultaneously)
+- Adjust and extend the tests and make some stress tests
+  (status: Following error handling changes, some tests cause problems and need further work for them to work(the tests, not the app )
+- Finish the basic frontend UX/UI
+  (status: missing some UI componenets and the connectivity between the FE to the BE endpoint still does not work) 
 - Add rate limiting for API endpoints  (security)
 - Add an easy migration feature
   
