@@ -8,13 +8,14 @@ A robust task management system built with FastAPI, SQLAlchemy, and SQLite. The 
 3. [Installation](#installation)
 4. [Configuration](#configuration)
 5. [Running the Application](#running-the-application)
-6. [API Usage Examples](#api-usage-examples)
-7. [Tests](#running-tests)
-8. [Security Features](#security-features)
-9. [Project Structure And Architecture](#project-structure-and-architecture)
-10. [Data Management](#data-management)
-11. [Error Handling](#error-handling)
-12. [Future Enhancements and Roadmap](#future-enhancements-and-roadmap)
+6. [Pycharm setup](#pycharm-setup)
+7. [API Usage Examples](#api-usage-examples)
+8. [Tests - Info and How To](#Tests---Info-and-How-To)
+9. [Security Features](#security-features)
+10. [Project Structure And Architecture](#project-structure-and-architecture)
+11. [Data Management](#data-management)
+12. [Error Handling (TBD*)](#Error-Handling-(TBD*))
+13. [Future Enhancements and Roadmap](#future-enhancements-and-roadmap)
 
 ## Features
 
@@ -84,7 +85,7 @@ After the server is running, you can access each of the API documentation:
   - Click on the arrow near the right "RUN" triangle to open a drop down menu -> edit configurations...
   - The run configuration window will open. Make a new configuration and select "FastAPI" configuration. After creating the new configuration, fill like in the image:
 ![תמונה](https://github.com/user-attachments/assets/67a0e8e4-f67d-47d0-81dd-bee095bd31a5)
-  - You can run after this. To run tests you have the server running.
+  - You can run after this. To run tests the server must run.
 
 ## API Usage Examples
 
@@ -143,7 +144,7 @@ PowerShell:
 Invoke-RestMethod -Method Get -Uri "http://localhost:8000/api/v1/tasks" -Headers @{"Authorization"="Bearer YOUR_TOKEN_HERE"}
 ```
 
-## Tests - Info and How TO
+## Tests - Info and How To
 The project includes the basic verification tests that were provided with the assignment (test_ver.py), which have been extended with additional test cases to ensure functionality.
 
 ### Modes 
