@@ -9,7 +9,7 @@ A robust task management system built with FastAPI, SQLAlchemy, and SQLite. The 
 4. [Configuration](#configuration)
 5. [Running the Application](#running-the-application)
 6. [API Usage Examples](#api-usage-examples)
-7. [Running Tests](#running-tests)
+7. [Tests](#running-tests)
 8. [Security Features](#security-features)
 9. [Project Structure And Architecture](#project-structure-and-architecture)
 10. [Data Management](#data-management)
@@ -143,13 +143,22 @@ PowerShell:
 Invoke-RestMethod -Method Get -Uri "http://localhost:8000/api/v1/tasks" -Headers @{"Authorization"="Bearer YOUR_TOKEN_HERE"}
 ```
 
-## Running Tests
+## Tests - Info and How TO
+The project includes the basic verification tests that were provided with the assignment (test_ver.py), which have been extended with additional test cases to ensure functionality.
 
+### Modes 
+The project has a "test" / "production" modes that can changed before the app starts via the ENV variable value in the /app/core/confige.py. It can also be changed while the app running, but will take effect only if a new "init_db" will be added and ran before it.
+Each mode has its own Database: ![תמונה](https://github.com/user-attachments/assets/65f1ed33-8270-43c2-8a9e-a5eebcad3a7b) . On test mode, the database tables are dropped with each restart of the app, while the "production" database will keep its data intact between sessions and restarts.
+
+
+### Running the tests:
 The project includes the basic verification tests that were provided with the assignment (test_ver.py), which have been extended with additional test cases to ensure robust functionality. To run these verification tests:
 
 ```bash
 pytest test_ver.py -v
 ```
+
+There is also a feature for "test"/"production" mode - the ENV variable in /app/core/configure.py. Its value can be changed accordingly. The main difference between the modes: in test mode the tables are dropped every time the app starts
 
 *Note: Throughout the development process, comprehensive tests were written and executed for each component (auth, tasks, security, etc.). These additional tests are not included in the README instructions as they require further adjustments to run collectively.*
 
